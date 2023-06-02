@@ -4,8 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3ed272e164.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="app.css" />
-    <title>Document</title>
+    <title>Dashboard</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="search-bar">
+          <label for="search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
+          <input type="search" name="search" id="search" />
+        </div>
+        <div class="icons">
+          <i class="fa-regular fa-bell"></i>
+          <img src="images/doug.jpeg" alt="" />
+          <p>Jacob Knittle</p>
+        </div>
+      </header>
+      <nav class="navbar">navbar</nav>
+      <div class="sidebar">
+        <h4 class="dashboard">
+          <i class="fa-regular fa-rectangle-list"></i> Dashboard
+        </h4>
+        <ul class="sidebar-list1 fa-ul">
+          <li>
+            <span class="fa-li"
+              ><i class="fa-solid fa-house" style="color: #ffffff"></i></span
+            >Home
+          </li>
+          <li>
+            <span class="fa-li"
+              ><i class="fa-solid fa-address-card" style="color: #f7f7f8"></i
+            ></span>
+            Profile
+          </li>
+          <li>
+            <span class="fa-li"
+              ><i class="fa-solid fa-message" style="color: #f3f4f7"></i
+            ></span>
+            Messages
+          </li>
+          <li>
+            <span class="fa-li"
+              ><i class="fa-solid fa-clock" style="color: #e8eaed"></i
+            ></span>
+            History
+          </li>
+          <li>
+            <span class="fa-li"
+              ><i class="fa-solid fa-file" style="color: #f5f5f5"></i
+            ></span>
+            Tasks
+          </li>
+          <li>
+            <span class="fa-li"
+              ><i
+                class="fa-solid fa-people-group"
+                style="color: #f4f5f5"
+              ></i></span
+            >Communities
+          </li>
+        </ul>
+
+        <ul class="sidebar-list2">
+          <li>Settings</li>
+          <li>Support</li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+      <div class="main">main</div>
+      <div class="announcements">announcements</div>
+      <div class="trending">trending</div>
+    </div>
+  </body>
 </html>
