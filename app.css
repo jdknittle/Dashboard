@@ -4,9 +4,9 @@
 }
 .container {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 1fr 3fr 3fr;
+  height: 140vh;
+  grid-template-columns: 1fr 5fr 2fr;
+  grid-template-rows: 1fr 1fr 6fr 6fr;
   grid-template-areas:
     'sidebar header header'
     'sidebar navbar navbar'
@@ -39,9 +39,47 @@
 }
 
 .navbar {
-  background-color: blue;
-  color: white;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
   grid-area: navbar;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar button {
+  background-color: #1f51ff;
+  color: white;
+  border: 1px solid #1f51ff;
+  border-radius: 16px;
+  width: 5rem;
+  height: 2rem;
+}
+.greeting {
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+.username {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.navbar img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
 }
 
 .sidebar {
@@ -58,22 +96,66 @@
 }
 .dashboard {
   padding-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .sidebar-list1 {
   padding-bottom: 3rem;
 }
+
+.sidebar ul {
+  margin-left: 1rem;
+}
 .main {
-  background-color: orange;
+  background-color: #d6ffff;
   grid-area: main;
 }
 
+.main p {
+  font-weight: bold;
+  padding: 1rem 0 0 1rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(125px, 1fr));
+  grid-template-rows: repeat(3, minmax(175px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.projects {
+  border: 1px solid #d6ffff;
+  border-radius: 10px;
+  background-color: white;
+  padding: 2rem;
+}
+
+.projects ul {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-top: 2rem;
+  gap: 3rem;
+}
+
 .announcements {
-  background-color: purple;
+  background-color: #d6ffff;
   grid-area: announcements;
 }
 
+.announcements h5 {
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.announcements-container {
+  background-color: white;
+}
+
 .trending {
-  background-color: violet;
+  background-color: #d6ffff;
   grid-area: trending;
 }
